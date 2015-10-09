@@ -1,0 +1,4 @@
+/usr/scripts/liquidsoap/music/youAccountNumber.wav
+/tmp/say/account12345.mp3
+/usr/scripts/liquidsoap/music/youBalance.wav
+/tmp/say/balance1234,45.mp3
