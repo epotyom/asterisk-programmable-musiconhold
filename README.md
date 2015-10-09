@@ -63,6 +63,11 @@ CREATE TABLE `queue_music` (
 ) ENGINE=InnoDB AUTO_INCREMENT=753748 DEFAULT CHARSET=latin1
 ```
 
+Configuration
+-------------
+
+Rename config-example.py to config.py and change it (there are comments in this file)
+
 Customization
 -------------
 
