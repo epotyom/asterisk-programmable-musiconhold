@@ -37,13 +37,13 @@ mode=custom
 application = /path/to/script/run.sh
 ```
 
-By default, asterisk runs musiconhold class once first channel connected to it, and then all other channels connects to the same music flow (so that it wont consume a lot of CPU). It's not good for us, because we want every channel listen to its own radio. So, we have to turn off this feature in musiconhold.conf, [general] section:
+By default, asterisk runs musiconhold class once first channel connected to it, and then all other channels connect to the same sound stream to save CPU usage. It's not good for us, because we want every channel listen to its own radio. So, we have to turn off this feature in musiconhold.conf, [general] section:
 ```
 [general]
 cachertclasses=no
 ```
 
-Also in dialplan before queue call you should set some environment variables and musiconhold class, for example:
+Also in dialplan, before queue call, you should set some environment variables and musiconhold class, for example:
 ```
 exten = s,1,Set(CHANNEL(musicclass)=programmable)
 exten = s,n,Set(ENV(PHONE)=${CALLERID(num)})
